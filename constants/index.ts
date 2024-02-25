@@ -57,10 +57,10 @@ export const plans = [
                 label: "Basic Access to Services",
                 isIncluded: true,
             },
-            {
-                label: "Priority Customer Support",
-                isIncluded: false,
-            },
+            //{
+            //    label: "Priority Customer Support",
+            //    isIncluded: false,
+            //},
             {
                 label: "Priority Updates",
                 isIncluded: false,
@@ -71,7 +71,7 @@ export const plans = [
         _id: 2,
         name: "Pro Package",
         icon: "/assets/icons/free-plan.svg",
-        price: 40,
+        price: 19,
         credits: 120,
         inclusions: [
             {
@@ -82,10 +82,10 @@ export const plans = [
                 label: "Full Access to Services",
                 isIncluded: true,
             },
-            {
-                label: "Priority Customer Support",
-                isIncluded: true,
-            },
+            //{
+            //    label: "Priority Customer Support",
+            //    isIncluded: true,
+            //},
             {
                 label: "Priority Updates",
                 isIncluded: false,
@@ -96,7 +96,7 @@ export const plans = [
         _id: 3,
         name: "Premium Package",
         icon: "/assets/icons/free-plan.svg",
-        price: 199,
+        price: 99,
         credits: 2000,
         inclusions: [
             {
@@ -107,10 +107,10 @@ export const plans = [
                 label: "Full Access to Services",
                 isIncluded: true,
             },
-            {
-                label: "Priority Customer Support",
-                isIncluded: true,
-            },
+            //{
+            //    label: "Priority Customer Support",
+            //    isIncluded: true,
+            //},
             {
                 label: "Priority Updates",
                 isIncluded: true,
