@@ -76,17 +76,17 @@
 }
 
 body::-webkit-scrollbar {
-  width: 0.5rem;
+    width: 0.5rem;
 }
 
 body::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #4e2cff;
-  outline: 0px solid slategrey;
-  border-radius: 1rem;
+    background-color: #4e2cff;
+    outline: 0px solid slategrey;
+    border-radius: 1rem;
 }
 
 .auth {
@@ -102,17 +102,17 @@ body::-webkit-scrollbar-thumb {
 }
 
 .root-container::-webkit-scrollbar {
-  width: 0.5rem;
+    width: 0.5rem;
 }
 
 .root-container::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
 }
 
 .root-container::-webkit-scrollbar-thumb {
-  background-color: #4e2cff;
-  outline: 0px solid slategrey;
-  border-radius: 1rem;
+    background-color: #4e2cff;
+    outline: 0px solid slategrey;
+    border-radius: 1rem;
 }
 
 /* ========================================== TAILWIND STYLES */
@@ -362,6 +362,10 @@ body::-webkit-scrollbar-thumb {
 
     .sidebar-logo {
         @apply flex items-center gap-2 md:py-2;
+    }
+
+    .logo {
+        width: 100%;
     }
 
     .sidebar-nav {
