@@ -7,8 +7,10 @@ import Header from "@/components/shared/Header";
 import { getUserImages } from "@/lib/actions/image.actions";
 import { getUserById } from "@/lib/actions/user.actions";
 
-const Profile = async ({ searchParams }: SearchParamProps) => {
-  const page = Number(searchParams?.page) || 1;
+const Profile = async ({ params, searchParams }: SearchParamProps) => {
+  const resolvedParams = await params;
+  const resolvedSearchParams = await searchParams;
+  const page = Number(resolvedSearchParams?.page) || 1;
   const { userId } = auth();
 
   if (!userId) redirect("/sign-in");
