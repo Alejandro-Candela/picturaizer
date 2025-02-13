@@ -26,7 +26,7 @@ export default function RootLayout({
                 variables: { colorPrimary: "#624cf5" },
             }}
         >
-            <html lang="en">
+            <html lang="en" className="dark">
                 <head>
                     <meta name="twitter:card" content="A platform to create and modify images with AI" />
                     <meta property="og:title" content="Picturaizer" />

@@ -12,7 +12,7 @@ const Sidebar = () => {
 
     return (
         <aside className="sidebar">
-            <div className="flex size-full flex-col gap-4">
+            <div className="flex size-full flex-col gap-2">
                 <Link href="/" className="sidebar-logo">
                     <Image
                         src="/assets/images/picturaizer-logo.png"
@@ -34,7 +34,7 @@ const Sidebar = () => {
                                         className={`sidebar-nav_element group ${
                                             isActive
                                                 ? "bg-purple-gradient text-white"
-                                                : "text-gray-700"
+                                                : "text-gray-300"
                                         }`}
                                     >
                                         <Link className="sidebar-link" href={link.route}>
@@ -61,7 +61,7 @@ const Sidebar = () => {
                                         className={`sidebar-nav_element group ${
                                             isActive
                                                 ? "bg-purple-gradient text-white"
-                                                : "text-gray-700"
+                                                : "text-gray-300"
                                         }`}
                                     >
                                         <Link className="sidebar-link" href={link.route}>
@@ -78,7 +78,7 @@ const Sidebar = () => {
                                 );
                             })}
 
-                            <li className="cursor-pointer gap-2 p-4">
+                            <li className="cursor-pointer gap-2 p-2">
                                 <UserButton afterSignOutUrl="/" showName />
                             </li>
                         </ul>

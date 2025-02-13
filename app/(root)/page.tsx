@@ -26,7 +26,7 @@ const Home = async ({ searchParams }: SearchParamProps) => {
               href={link.route}
               className="flex-center flex-col gap-2"
             >
-              <li className="flex-center w-fit rounded-full bg-white p-4">
+              <li className="flex-center w-fit rounded-full bg-gray-900 p-2">
                 <Image src={link.icon} alt="image" width={24} height={24} />
               </li>
               <p className="p-14-medium text-center text-white">{link.label}</p>

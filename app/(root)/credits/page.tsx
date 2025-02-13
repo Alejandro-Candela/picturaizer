@@ -40,7 +40,7 @@ const Credits = async () => {
                 {plan.inclusions.map((inclusion) => (
                   <li
                     key={plan.name + inclusion.label}
-                    className="flex items-center gap-4"
+                    className="flex items-center gap-2"
                   >
                     <Image
                       src={`/assets/icons/${
