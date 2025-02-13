@@ -86,7 +86,7 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
     background-color: #4e2cff;
     outline: 0px solid slategrey;
-    border-radius: 1rem;
+    border-radius: .75rem;
 }
 
 .auth {
@@ -112,7 +112,7 @@ body::-webkit-scrollbar-thumb {
 .root-container::-webkit-scrollbar-thumb {
     background-color: #4e2cff;
     outline: 0px solid slategrey;
-    border-radius: 1rem;
+    border-radius: .75rem;
 }
 
 /* ========================================== TAILWIND STYLES */
@@ -138,17 +138,17 @@ body::-webkit-scrollbar-thumb {
     /* ===== TYPOGRAPHY */
     /* 44 */
     .h1-semibold {
-        @apply text-[36px] font-semibold sm:text-[44px] leading-[120%] sm:leading-[56px];
+        @apply text-[36px] font-semibold sm:text-[40px] leading-[120%] sm:leading-[56px];
     }
 
     /* 36 */
     .h2-bold {
-        @apply text-[30px] font-bold md:text-[36px] leading-[110%];
+        @apply text-[26px] font-bold md:text-[26px] leading-[110%];
     }
 
     /* 30 */
     .h3-bold {
-        @apply font-bold text-[30px] leading-[140%];
+        @apply font-bold text-[26px] leading-[140%];
     }
 
     /* 24 */
@@ -157,11 +157,11 @@ body::-webkit-scrollbar-thumb {
     }
 
     /* 20 */
-    .p-20-semibold {
+    .p-16-semibold {
         @apply font-semibold text-[20px] leading-[140%];
     }
 
-    .p-20-regular {
+    .p-16-regular {
         @apply font-normal text-[20px] leading-[140%];
     }
 
@@ -207,11 +207,11 @@ body::-webkit-scrollbar-thumb {
     }
 
     .input-field {
-        @apply rounded-[16px] border-2 border-purple-200/20 shadow-sm shadow-purple-200/15 text-dark-600 disabled:opacity-100 p-16-semibold h-[50px] md:h-[54px] focus-visible:ring-offset-0 px-4 py-3 focus-visible:ring-transparent !important;
+        @apply rounded-[16px] border-2 border-purple-200/20 shadow-sm shadow-gray-200/50 text-gray-300 disabled:opacity-100 p-16-semibold h-[50px] md:h-[54px] focus-visible:ring-offset-0 px-4 py-3 focus-visible:ring-transparent !important;
     }
 
     .search-field {
-        @apply border-0 bg-transparent text-dark-600 w-full placeholder:text-dark-400 h-[50px] p-16-medium focus-visible:ring-offset-0 p-3 focus-visible:ring-transparent !important;
+        @apply border-0 bg-transparent text-gray-300 w-full placeholder:text-dark-400 h-[50px] p-16-medium focus-visible:ring-offset-0 p-3 focus-visible:ring-transparent !important;
     }
 
     .submit-button {
@@ -219,7 +219,7 @@ body::-webkit-scrollbar-thumb {
     }
 
     .select-field {
-        @apply w-full border-2 border-purple-200/20 shadow-sm shadow-purple-200/15 rounded-[16px] h-[50px] md:h-[54px] text-dark-600 p-16-semibold disabled:opacity-100 placeholder:text-dark-400/50 px-4 py-3 focus:ring-offset-0 focus-visible:ring-transparent focus:ring-transparent focus-visible:ring-0 focus-visible:outline-none !important;
+        @apply w-full border-2 border-purple-200/20 shadow-sm shadow-purple-200/15 rounded-[16px] h-[50px] md:h-[54px] text-gray-300 p-16-semibold disabled:opacity-100 placeholder:text-dark-400/50 px-4 py-3 focus:ring-offset-0 focus-visible:ring-transparent focus:ring-transparent focus-visible:ring-0 focus-visible:outline-none !important;
     }
 
     .select-trigger {
@@ -248,7 +248,7 @@ body::-webkit-scrollbar-thumb {
 
     /* Home Page */
     .home {
-        @apply sm:flex-center hidden h-72 flex-col gap-4 rounded-[20px] border bg-banner bg-cover bg-no-repeat p-10 shadow-inner;
+        @apply sm:flex-center hidden h-72 flex-col gap-8 rounded-[20px] border bg-banner bg-cover bg-no-repeat p-10 shadow-inner;
     }
 
     .home-heading {
@@ -308,7 +308,7 @@ body::-webkit-scrollbar-thumb {
     }
 
     .collection-card {
-        @apply flex flex-1 cursor-pointer flex-col gap-5 rounded-[16px] border-2 border-purple-200/15 bg-gray-900 p-4 shadow-xl shadow-gray-200/10 transition-all hover:shadow-purple-200/20;
+        @apply flex flex-1 cursor-pointer flex-col gap-5 rounded-[16px] border-2 border-gray-200/15 bg-gray-900 p-4 shadow-xl shadow-gray-700/10 transition-all hover:shadow-gray-700/40 hover:-translate-y-1 duration-300;
     }
 
     /* MediaUploader Component */
@@ -326,7 +326,8 @@ body::-webkit-scrollbar-thumb {
 
     /* Navbar Component */
     .header {
-        @apply flex-between fixed h-16 w-full border-b-4 border-purple-100 bg-gray-900 p-5 lg:hidden;
+        @apply flex-between fixed h-16 w-full border-b-gray-700 bg-gray-900/50 p-5 lg:hidden;
+        backdrop-filter: blur(30px);
     }
 
     .header-nav_elements {
@@ -340,7 +341,7 @@ body::-webkit-scrollbar-thumb {
 
     /* Sidebar Component */
     .sidebar {
-        @apply hidden h-screen w-72 bg-gray-900 p-5 shadow-md shadow-purple-200/50 lg:flex;
+        @apply hidden h-screen w-72 bg-gray-900 p-5 shadow-md shadow-gray-700/80 lg:flex;
         position: sticky;
         top: 0;
         overflow-y: auto;
@@ -357,7 +358,7 @@ body::-webkit-scrollbar-thumb {
     .sidebar::-webkit-scrollbar-thumb {
         background-color: #4e2cff;
         outline: 0px solid slategrey;
-        border-radius: 1rem;
+        border-radius: .75rem;
     }
 
     .sidebar-logo {
@@ -365,7 +366,7 @@ body::-webkit-scrollbar-thumb {
     }
 
     .logo {
-        width: 100%;
+        max-width: 124px;
     }
 
     .sidebar-nav {
@@ -377,13 +378,13 @@ body::-webkit-scrollbar-thumb {
     }
 
     .sidebar-nav_element {
-        @apply flex-center p-16-semibold w-full whitespace-nowrap rounded-full bg-cover  transition-all hover:bg-purple-100 hover:shadow-inner;
+        @apply flex-center p-16-semibold w-full whitespace-nowrap rounded-full bg-cover  transition-all hover:bg-gray-400 hover:shadow-inner duration-200;
 
        
     }
 
     .sidebar-link {
-        @apply p-16-semibold flex size-full gap-4 p-2;
+        @apply p-16-semibold flex size-full gap-4 p-2 duration-200;
         &:hover {
             @apply text-gray-900;
         }

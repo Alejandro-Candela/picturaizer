@@ -19,7 +19,7 @@ const Home = async ({ searchParams }: SearchParamProps) => {
         <h1 className="home-heading">
           Unleash Your Creative Vision with Picturaizer
         </h1>
-        <ul className="flex-center w-full gap-20">
+        <ul className="flex-center w-full gap-16">
           {navLinks.slice(1, 5).map((link) => (
             <Link
               key={link.route}

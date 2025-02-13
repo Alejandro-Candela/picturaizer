@@ -63,7 +63,7 @@ const MediaUploader = ({
     >
       {({ open }) => (
         <div className="flex flex-col gap-2">
-          <h3 className="h3-bold text-dark-600">
+          <h3 className="h3-bold text-gray-300">
             Original
           </h3>
 
