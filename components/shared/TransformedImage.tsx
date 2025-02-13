@@ -30,7 +30,7 @@ const TransformedImage = ({
     };
 
     return (
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-4">
             <div className="flex-between">
                 <h3 className="h3-bold text-gray-300">Transformed</h3>
 
